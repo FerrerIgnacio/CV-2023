@@ -1,0 +1,136 @@
+/* CAMBIOS GENERALES */
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Titillium Web', sans-serif;
+}
+
+/* COLOR DE FONDO DEL BODY */
+body{
+    background-color: rgb(0, 58, 70);
+}
+
+/* GRID CSS - HECHO CON AREAS*/
+.contenedor{
+    width: auto;
+    height: 100vh;
+    margin: 20px;
+    display: grid;
+    grid-template-columns: 30% repeat(1,1fr);
+    grid-template-rows: repeat(4,1fr);
+    grid-template-areas: 
+    "s1 sr"
+    "sc se"
+    "ss sa"
+    "set sa"
+    "bd bd";
+    color: rgb(0, 58, 70);
+}
+
+/* SECCION IZQUIERDA - COLOR AMARILLO */
+.seccion-1{
+    grid-area: s1;
+}
+
+.seccion-contacto{
+    grid-area: sc;
+}
+
+.seccion-skill{
+    grid-area: ss;
+}
+
+.seccion-extra{
+    grid-area: set;
+}
+
+/* CAMBIOS GENERALES DE LOS TITULOS */
+.titulo-ignacio,
+.titulo-maquetador,
+.titulo-contacto,
+.titulo-skil,
+.titulo-extra,
+.titulo-resumen,
+.titulo-academico,
+.titulo-action{
+    display: flex;
+    justify-content: center;
+    font-size: 2vw;
+    text-align: center;
+}
+
+.titulo-maquetador{
+    font-size: 1.3vw;
+}
+
+/* ASIGNANDO EL COLOR DE LA SECCION IZQUIERDA */
+.seccion-1,
+.seccion-contacto,
+.seccion-skill,
+.seccion-extra{
+    padding: 15px;
+    background-color: rgb(255, 204, 71);
+}
+
+.caja-action{
+    margin: 150px;
+}
+
+.h5-titu,
+.lista,
+.h6-titu{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+/*PARTE DERECHA*/
+.seccion-resumen{
+    grid-area:sr;
+}
+
+.seccion-estudios{
+    grid-area:se;
+}
+
+.seccion-action{
+    grid-area:sa;
+}
+
+.seccion-descargar{
+    grid-area: bd;
+    background-color: rgb(211, 211, 211);
+}
+
+.seccion-resumen,
+.seccion-estudios,
+.seccion-action{
+    background-color: rgb(235, 235, 235);
+}
+
+
+/* LISTA DE SECCION EXTRA */
+.lista{
+    display: flex;
+    flex-direction: column-reverse;
+    list-style: none;
+    font-weight: bold;
+} 
+
+.texto-resumen{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1.5px;
+    font-size: 1.1rem;
+    padding: 40px;
+}
+
+/* HOVER DE LOS LINKS DE: LINKEDIN Y GITHUB */
+a:hover{
+    color:black;
+}
